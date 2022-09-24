@@ -1,0 +1,26 @@
+﻿@model aplicacao_teste.Models.UserViewModel
+
+<h1>Cadastre-se hoje mesmo!</h1>
+<h4>Ou vá embora...</h4>
+
+<br />
+
+<form asp-controller="Cadastro" asp-action="SignedUp" method="post">
+    <fieldset>
+        <legend>Informações Básicas:</legend>
+        <label>
+            Nome: <br />
+            <input asp-for=Name type="text"/>
+        </label>
+        <label>
+            Sobrenome: <br />
+            <input asp-for=LastName type="text"/>
+        </label>
+        <label>
+            Email: <br />
+            <input asp-for=Email type="email"/>
+        </label>
+
+        <button>Cadastrar</button>
+    </fieldset>
+</form>
